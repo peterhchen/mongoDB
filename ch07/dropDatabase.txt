@@ -1,0 +1,15 @@
+# Display database
+show dbs
+> local
+> mydb
+> test
+
+# open database mydb
+use mydb
+
+# drop database
+db.dropDatabase ()
+
+# display databse. the mydb is dropped.
+> local
+> test

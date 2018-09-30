@@ -1,0 +1,29 @@
+# Create Collection Syntax: db.createCollection(name, options)
+# create collection without options
+>use test
+switched to db test
+>db.createCollection("mycollection")
+
+# create colleciton with options
+# name: "Collection-name"
+# capped: 
+# (Optional) If true, enables a capped collection. 
+# Capped collection is a fixed size collection that automatically overwrites 
+# its oldest entries when it reaches its maximum size. 
+# If you specify true, you need to specify size parameter also.
+# size:
+# (Optional) Specifies a maximum size in bytes for a capped collection. 
+If capped is true, then you need to specify this field also.
+# max:
+# (Optional) Specifies the maximum number of documents allowed in the capped collection.
+>db.createCollection("mycol", { capped : true, autoIndexId : true, size : 
+   6142800, max : 10000 } )
+
+# In MongoDB, the colleciton is automatically created. 
+# You do not need to create collection.
+>db.tutorialspoint.insert({"name" : "tutorialspoint"})
+>show collections
+mycol
+mycollection
+system.indexes
+tutorialspoint

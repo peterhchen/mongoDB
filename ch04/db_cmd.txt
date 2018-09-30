@@ -1,0 +1,10 @@
+# open command window 
+mongod # to bring up server mongod (mongo deamon)
+# open another command window
+# cd to directory you want to save
+# e.g., "D:/Work/MicroService\MongoDB\ch04
+# start the momgo shell
+mongo 
+> db.test.save ({a:1})
+> db.test.find()
+> db.stats()

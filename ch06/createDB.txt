@@ -1,0 +1,12 @@
+# create database synatx: use DATABASE_NAME
+# create database mydb
+use mydb
+
+# display database
+show dbs
+
+# insert document into a colleciton (movie)
+db.movie.insert ({"name": "tutorials point"})
+
+# display database
+show dbs
