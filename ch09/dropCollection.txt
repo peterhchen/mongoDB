@@ -1,0 +1,27 @@
+# drop collection
+db.COLLECTION_NAME.drop()
+
+# create/swtich database 
+>use mydb
+switched to db mydb
+
+# Display collecitons
+>show collections
+mycol
+mycollection
+system.indexes
+tutorialspoint
+>
+
+# drop displays true if successfully.
+# drop displays false if failed.
+>db.mycollection.drop()
+true
+>
+
+# Display collections
+>show collections
+mycol
+system.indexes
+tutorialspoint
+>
